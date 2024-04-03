@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <form [formGroup]="miFormulario" (ngSubmit)="submitForm()">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3 form-inline">
+            <label for="fecha" class="form-label">Fecha:</label>
+            <input type="text" class="form-control" id="fecha" formControlName="fecha" placeholder="dd/mm/yyyy" >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3 form-inline">
+            <label for="numero" class="form-label">Numero:</label>
+            <input type="text" class="form-control" id="numero" formControlName="numero" placeholder="Número de pago">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3 form-inline">
+            <label for="recibidoDe" class="form-label">Recibí de:</label>
+            <input type="text" class="form-control" id="recibidoDe" formControlName="recibidoDe" placeholder="Nombre completo">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3 form-inline">
+            <label for="concepto" class="form-label">Concepto:</label>
+            <input type="text" class="form-control" id="concepto" formControlName="concepto" placeholder="Concepto del pago">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-3 form-inline">
+            <label for="valor" class="form-label">El valor de:</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" id="valor" formControlName="valor" placeholder="Valor del pago">
+              <button type="submit" class="btn btn-primary ms-2" [disabled] = "miFormulario.valid ? false : true">Imprimir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,42 @@
+@media print {
+  /* Establecer el tamaño del papel */
+  @page {
+    size: 15cm 4cm; /* Ancho x Alto */
+  }
+
+  button {
+    display: none;
+  }
+
+  input {
+    border: none;
+  }
+
+  label {
+    width: 20%;
+  }
+
+
+  .form-inline {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .form-inline label {
+    margin-right: 5px; 
+  }
+
+  .form-inline input {
+    margin-top: -8px; 
+  }
+
+
+  .input-group-text {
+    border: none;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+
+
+}
