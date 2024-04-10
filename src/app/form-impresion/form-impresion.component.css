@@ -1,42 +1,33 @@
 @media print {
-  /* Establecer el tamaño del papel */
-  @page {
-    size: 15cm 4cm; /* Ancho x Alto */
-  }
+    button {
+        display: none;
+    }
 
-  button {
-    display: none;
-  }
+    input {
+        border: none;
+        margin: 0;
+        font-size: 14px;
 
-  input {
-    border: none;
-  }
+    }
 
-  label {
-    width: 20%;
-  }
+    span {
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+}
 
-
-  .form-inline {
+.img-container {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y los campos del formulario */
+}
 
-  .form-inline label {
-    margin-right: 5px; 
-  }
-
-  .form-inline input {
-    margin-top: -8px; 
-  }
-
-
-  .input-group-text {
-    border: none;
-    margin-top: -10px;
-    margin-right: -10px;
-  }
-
-
+.img-container img {
+    max-height: 100px; /* Altura máxima de la imagen */
+    width: auto; /* Ancho automático para mantener la relación de aspecto */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin deformarla */
 }

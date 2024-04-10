@@ -24,9 +24,9 @@ export class FormImpresionComponent implements OnInit {
 
   submitForm() {
     if (this.miFormulario.valid) {
-      window.print()
+        window.print()
+
     } else {
-      // Realizar acciones si el formulario no es válido
       console.log('El formulario no es válido');
     }
   }
